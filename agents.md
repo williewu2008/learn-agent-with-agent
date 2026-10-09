@@ -77,7 +77,7 @@ flowchart TD
 | **已完成 (Done)** | 建立三師爸 61 部 AI Agent 教學清單 | User & Agent | [sensebar_ai_agent_tutorials.md](file:///e:/用Agent來學習Agent/sensebar_ai_agent_tutorials.md) |
 | **已完成 (Done)** | 批次抓取並轉存 61 部影片字幕/逐字稿庫 | User & Agent | [subtitles/README.md](file:///e:/用Agent來學習Agent/subtitles/README.md) |
 | **已完成 (Done)** | 撰寫其他 Agent 遵循之建置協定指南 | User & Agent | [AGENT_RECIPE.md](file:///e:/用Agent來學習Agent/AGENT_RECIPE.md) |
-| **進行中 (In Progress)** | 發布至公開 GitHub 儲存庫 | User & Agent | GitHub CLI |
+| **已完成 (Done)** | 發布至公開 GitHub 儲存庫 | User & Agent | [learn-agent-with-agent](https://github.com/williewu2008/learn-agent-with-agent) |
 | **待辦 (Backlog)** | Phase 1.1: 探討 Agent 核心定義與自主性光譜 | 待開始 | `notes/01-foundations/` |
 
 ---
