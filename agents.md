@@ -73,7 +73,11 @@ flowchart TD
 | :--- | :--- | :--- | :--- |
 | **已完成 (Done)** | 專案初始化與結構建立 | User & Agent | [README.md](file:///e:/用Agent來學習Agent/README.md), [ANTIGRAVITY.md](file:///e:/用Agent來學習Agent/ANTIGRAVITY.md) |
 | **已完成 (Done)** | 工作藍圖制定 (`agents.md`) | User & Agent | [agents.md](file:///e:/用Agent來學習Agent/agents.md) |
-| **進行中 (In Progress)** | 規劃 Phase 1 研究起點與章節筆記結構 | User & Agent | [notes/README.md](file:///e:/用Agent來學習Agent/notes/README.md) |
+| **已完成 (Done)** | 安裝 yt-dlp & FFmpeg 影音工具鏈 | User & Agent | 系統環境配置 |
+| **已完成 (Done)** | 建立三師爸 61 部 AI Agent 教學清單 | User & Agent | [sensebar_ai_agent_tutorials.md](file:///e:/用Agent來學習Agent/sensebar_ai_agent_tutorials.md) |
+| **已完成 (Done)** | 批次抓取並轉存 61 部影片字幕/逐字稿庫 | User & Agent | [subtitles/README.md](file:///e:/用Agent來學習Agent/subtitles/README.md) |
+| **已完成 (Done)** | 撰寫其他 Agent 遵循之建置協定指南 | User & Agent | [AGENT_RECIPE.md](file:///e:/用Agent來學習Agent/AGENT_RECIPE.md) |
+| **進行中 (In Progress)** | 發布至公開 GitHub 儲存庫 | User & Agent | GitHub CLI |
 | **待辦 (Backlog)** | Phase 1.1: 探討 Agent 核心定義與自主性光譜 | 待開始 | `notes/01-foundations/` |
 
 ---
@@ -83,3 +87,6 @@ flowchart TD
 - **2026-10-09**：
   - 建立專案藍圖 `agents.md`，確認專案採取知識庫與研究筆記導向。
   - 確立以「開工／收工」工作流嚴謹管理進度與版本控制。
+  - 成功建置 `yt-dlp` 與 `FFmpeg` 本機影音工具環境。
+  - 檢索三師爸 (@sensebar) 頻道 355 部影片，精準篩選 61 部與 AI Agent、AntiGravity、OpenCode、Codex、Claude 相關影片並產出教學清單。
+  - 自動化批次下載 61 部影片字幕，清洗去重後生成具時間戳與純文字段落的 Markdown 知識庫（`subtitles/`）。

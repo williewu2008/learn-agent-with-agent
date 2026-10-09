@@ -17,17 +17,35 @@
 
 ```text
 用Agent來學習Agent/
-├── ANTIGRAVITY.md      # 專案規範、Agent 指南與開工/收工工作流程
-├── agents.md           # 專案工作藍圖（Roadmap）、階段性目標與進度看板
-├── README.md           # 專案簡介與導覽索引
-├── .gitignore          # Git 忽視清單（環境設定、暫存檔案）
-└── notes/              # 知識庫與主題研究筆記
-    ├── README.md       # 筆記總覽與導航
-    ├── 01-foundations/ # Phase 1: Agent 核心基石與組件
-    ├── 02-patterns/    # Phase 2: 設計模式與推論架構 (ReAct, Multi-Agent...)
-    ├── 03-frameworks/  # Phase 3: 主流框架評估 (LangGraph, CrewAI, AutoGen...)
-    └── 04-protocols/   # Phase 4: 通訊協定與生態 (MCP, Tools, 安全性)
+├── ANTIGRAVITY.md                  # 專案規範、Agent 指南與開工/收工工作流程
+├── agents.md                       # 專案工作藍圖（Roadmap）、階段性目標與進度看板
+├── AGENT_RECIPE.md                 # 專供其他 Agent 閱讀的知識庫自動建置協定 (SOP)
+├── antigravity_tutorials.md        # YouTube Antigravity 精選教學影片清單
+├── sensebar_ai_agent_tutorials.md  # 三師爸 (@sensebar) AI Agent 61 部教學影片清單
+├── urls.txt                        # 純網址清單 (供快速複製貼入 NotebookLM)
+├── README.md                       # 專案簡介與導覽索引
+├── .gitignore                      # Git 忽視清單（環境設定、暫存檔案）
+├── subtitles/                      # 61 部 AI Agent 系列教學影片完整逐字稿與字幕庫
+│   ├── README.md                   # 字幕檔案分類與快速導覽索引
+│   ├── 01-antigravity/             # AntiGravity 系列逐字稿 (EP01~EP09)
+│   ├── 02-opencode/                # OpenCode 系列逐字稿 (入門~EP07)
+│   ├── 03-codex/                   # GPT-CodeX 系列逐字稿 (EP01~EP05 及應用)
+│   ├── 04-claude/                  # Claude Code & AI 系列逐字稿 (EP01~EP14)
+│   └── 05-agent/                   # AI Agent 基本功與專題逐字稿 (EP01~EP07)
+└── notes/                          # 知識庫與主題研究筆記
+    ├── README.md                   # 筆記總覽與導航
+    ├── 01-foundations/             # Phase 1: Agent 核心基石與組件
+    ├── 02-patterns/                # Phase 2: 設計模式與推論架構 (ReAct, Multi-Agent...)
+    ├── 03-frameworks/              # Phase 3: 主流框架評估 (LangGraph, CrewAI, AutoGen...)
+    └── 04-protocols/               # Phase 4: 通訊協定與生態 (MCP, Tools, 安全性)
 ```
+
+---
+
+## 🤖 給其他 AI Agent 的自動建置指引
+
+若你是剛克隆或接手本儲存庫的 AI Agent（例如 Claude Code、OpenCode、Antigravity、Codex 等）：
+請優先閱讀 **[AGENT_RECIPE.md](file:///e:/用Agent來學習Agent/AGENT_RECIPE.md)**。該文件包含完整的環境配置、資料爬取演算法、字幕清洗與去重規則，可指導你自主且零誤差地重現或擴充此知識庫。
 
 ---
 
