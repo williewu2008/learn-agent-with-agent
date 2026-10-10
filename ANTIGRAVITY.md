@@ -4,9 +4,9 @@
 - **專案名稱**：用Agent來學習Agent (Learning Agents with Agents)
 - **定位**：以 AI Agent 協同探索、研究與建構 Agent 知識體系之研究與學習專案。
 - **核心文件**：
-  - [agents.md](file:///e:/用Agent來學習Agent/agents.md)：專案工作藍圖（Roadmap & Blueprint）、任務看板與研究進度。
-  - [README.md](file:///e:/用Agent來學習Agent/README.md)：專案簡介與目錄導引。
-  - [notes/](file:///e:/用Agent來學習Agent/notes/)：知識庫與結構化研究筆記。
+  - [agents.md](agents.md)：專案工作藍圖（Roadmap & Blueprint）、任務看板與研究進度。
+  - [README.md](README.md)：專案簡介與目錄導引。
+  - [notes/](notes/)：知識庫與結構化研究筆記。
 
 ---
 

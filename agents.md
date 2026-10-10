@@ -71,19 +71,26 @@ flowchart TD
 
 | 狀態 | 項目 | 負責 / 協同 | 關聯文檔 |
 | :--- | :--- | :--- | :--- |
-| **已完成 (Done)** | 專案初始化與結構建立 | User & Agent | [README.md](file:///e:/用Agent來學習Agent/README.md), [ANTIGRAVITY.md](file:///e:/用Agent來學習Agent/ANTIGRAVITY.md) |
-| **已完成 (Done)** | 工作藍圖制定 (`agents.md`) | User & Agent | [agents.md](file:///e:/用Agent來學習Agent/agents.md) |
+| **已完成 (Done)** | 專案初始化與結構建立 | User & Agent | [README.md](README.md), [ANTIGRAVITY.md](ANTIGRAVITY.md) |
+| **已完成 (Done)** | 工作藍圖制定 (`agents.md`) | User & Agent | [agents.md](agents.md) |
 | **已完成 (Done)** | 安裝 yt-dlp & FFmpeg 影音工具鏈 | User & Agent | 系統環境配置 |
-| **已完成 (Done)** | 建立三師爸 61 部 AI Agent 教學清單 | User & Agent | [sensebar_ai_agent_tutorials.md](file:///e:/用Agent來學習Agent/sensebar_ai_agent_tutorials.md) |
-| **已完成 (Done)** | 批次抓取並轉存 61 部影片字幕/逐字稿庫 | User & Agent | [subtitles/README.md](file:///e:/用Agent來學習Agent/subtitles/README.md) |
-| **已完成 (Done)** | 撰寫其他 Agent 遵循之建置協定指南 | User & Agent | [AGENT_RECIPE.md](file:///e:/用Agent來學習Agent/AGENT_RECIPE.md) |
+| **已完成 (Done)** | 建立三師爸 61 部 AI Agent 教學清單 | User & Agent | [sensebar_ai_agent_tutorials.md](sensebar_ai_agent_tutorials.md) |
+| **已完成 (Done)** | 批次抓取並轉存 61 部影片字幕/逐字稿庫 | User & Agent | [subtitles/README.md](subtitles/README.md) |
+| **已完成 (Done)** | 撰寫其他 Agent 遵循之建置協定指南 | User & Agent | [AGENT_RECIPE.md](AGENT_RECIPE.md) |
 | **已完成 (Done)** | 發布至公開 GitHub 儲存庫 | User & Agent | [learn-agent-with-agent](https://github.com/williewu2008/learn-agent-with-agent) |
-| **待辦 (Backlog)** | Phase 1.1: 探討 Agent 核心定義與自主性光譜 | 待開始 | `notes/01-foundations/` |
+| **已完成 (Done)** | 優化 GitHub 儲存庫 (Badges, 範本與文件美化) | User & Agent | [README.md](README.md), [.github/](.github/) |
+| **待辦 (Backlog)** | Phase 1.1: 探討 Agent 核心定義與自主性光譜 | 待開始 | [notes/01-foundations/](notes/01-foundations/) |
 
 ---
 
 ## 4. 決策日誌與踩坑筆記 (Log & Insights)
 
+- **2026-10-11**：
+  - 全面優化 GitHub 儲存庫外觀與開源基礎設施。
+  - 新增 MIT 開源授權條款 (`LICENSE`)。
+  - 新增 GitHub Issue 範本（需求建議與提問討論）。
+  - 增強 `README.md`（加入 Shields.io 徽章、視覺化協作流程圖、影音矩陣表與 NotebookLM 實戰指南）。
+  - 修復全專案 Markdown 文件中內部檔案連結為標準相對路徑，相容 GitHub 網頁端。
 - **2026-10-09**：
   - 建立專案藍圖 `agents.md`，確認專案採取知識庫與研究筆記導向。
   - 確立以「開工／收工」工作流嚴謹管理進度與版本控制。
