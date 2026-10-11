@@ -1,4 +1,4 @@
-# agents.md - 專案工作藍圖 (Project Blueprint)
+# AGENTS.md - 專案工作藍圖 (Project Blueprint)
 
 > **核心理念**：以 Agent 來學習 Agent —— 透過與 AI Agent 的深度對話、拆解分析與協作實驗，建立完整、現代且實用的 AI Agent 知識與實踐體系。
 
@@ -79,13 +79,41 @@ flowchart TD
 | **已完成 (Done)** | 撰寫其他 Agent 遵循之建置協定指南 | User & Agent | [AGENT_RECIPE.md](AGENT_RECIPE.md) |
 | **已完成 (Done)** | 發布至公開 GitHub 儲存庫 | User & Agent | [learn-agent-with-agent](https://github.com/williewu2008/learn-agent-with-agent) |
 | **已完成 (Done)** | 優化 GitHub 儲存庫 (Badges, 範本與文件美化) | User & Agent | [README.md](README.md), [.github/](.github/) |
+| **已完成 (Done)** | 建置 Python 3.12 核心工具包環境 (.venv) | User & Agent | [AGENT_SETUP_教學檔案處理工具包.md](AGENT_SETUP_教學檔案處理工具包.md) |
+| **已完成 (Done)** | 跨 Agent 安裝語音輸入正規化與 Edge-TTS 技能 | User & Agent | [AGENT_SETUP_語音輸入文字正規化_跨Agent全域安裝.md](AGENT_SETUP_語音輸入文字正規化_跨Agent全域安裝.md) |
+| **已完成 (Done)** | 撰寫 Agent 專案自主重現使用說明書 | User & Agent | [AGENT_PLAYBOOK.md](AGENT_PLAYBOOK.md) |
+| **已完成 (Done)** | 建立 chezmoi 跨裝置技能與全域設定同步手冊 | User & Agent | [CHEZMOI_AGENT_SYNC_GUIDE.md](CHEZMOI_AGENT_SYNC_GUIDE.md) |
+| **已完成 (Done)** | 跨三大 Agent 同步三師爸 EP06 跨電腦三技能 | User & Agent | AntiGravity / ChatGPT App / OpenCode |
+| **已完成 (Done)** | 建立本專案跨電腦交接檔 (`handoff.md`) | User & Agent | [handoff.md](handoff.md) |
+| **已完成 (Done)** | 跨四大 Agent 安裝 RDQ 需求探索四象限法技能 (`rdq-skill`) | User & Agent | AntiGravity / Codex / OpenCode / Claude Code |
 | **待辦 (Backlog)** | Phase 1.1: 探討 Agent 核心定義與自主性光譜 | 待開始 | [notes/01-foundations/](notes/01-foundations/) |
 
 ---
 
 ## 4. 決策日誌與踩坑筆記 (Log & Insights)
 
+- **2026-10-12**：
+  - 完成全域 chezmoi 倉庫初始化並推送到遠端私有儲存庫（`williewu2008/dotfiles`），包含 AntiGravity、Codex、OpenCode 的全部技能與設定，並建立 `.chezmoiignore` 排除敏感資訊與嵌套 git。
+  - 專案由 `agents.md` 正式更名為跨平台開放標準全大寫 `AGENTS.md`，並建立交接檔 `handoff.md`。
 - **2026-10-11**：
+  - 安裝開源技能 [`rdq-skill`](https://github.com/mathruffian-dot/rdq-skill)（RDQ Method 需求探索四象限法）至電腦內四大 Agent 全域技能目錄：
+    1. **AntiGravity**：`~/.gemini/config/skills/rdq/`
+    2. **ChatGPT App (Codex)**：`~/.codex/skills/rdq/`
+    3. **OpenCode**：`~/.config/opencode/skills/rdq/`
+    4. **Claude Code**：`~/.claude/skills/rdq/`
+    - 實現任務動工前四象限（Ⅰ 擷取、Ⅱ 解答、Ⅲ 訪談、Ⅳ 建議）動詞鎖定與一頁式規格卡（`RDQ-spec-*.md`）確認機制。
+  - 完整同步三師爸 EP06 跨電腦管理三技能（`project-init`、`startup`、`shutdown`）至電腦內三大 Agent 全域技能目錄：
+    1. **AntiGravity / AntiGravity 2**：`~/.gemini/config/skills/`
+    2. **ChatGPT App (Codex)**：`~/.codex/skills/`
+    3. **OpenCode**：`~/.config/opencode/skills/`（採用對齊 OpenCode 權限之專屬版本）
+  - 所有技能配置自動綁定 GitHub 帳號為 `williewu2008`，並包含標準模板庫 `templates/`。
+  - 升級 `05-workflow` 技能規範對齊三層級自動偵測（L1 本地/GDrive、L2 GitHub、L3 Obsidian）。
+  - 本專案建立核心交接檔 [`handoff.md`](handoff.md)，並將專案藍圖透過 Git 重命名為跨平台開放標準全大寫 [`AGENTS.md`](AGENTS.md)。
+  - 撰寫 [`CHEZMOI_AGENT_SYNC_GUIDE.md`](CHEZMOI_AGENT_SYNC_GUIDE.md)，完整定義使用 `chezmoi` 管理與同步 AntiGravity / Codex 技能庫、全域規範（`AGENTS.md`）與 MCP 設定的架構，實現「電腦 A `chezmoi add` 存起、電腦 B `chezmoi update` 跟上」之跨裝置工作流。
+  - 撰寫 [`AGENT_PLAYBOOK.md`](AGENT_PLAYBOOK.md)，提供任何 AI Agent 在全新電腦重現本專案環境、全域受控區塊與工具鏈之完整作業手冊。
+  - 成功完成跨 Agent「語音輸入文字正規化」受控區塊（`SENSEBAR_VOICE_INPUT_NORMALIZATION_V1`）安裝，涵蓋 Codex 與 AntiGravity。
+  - 安裝並配置專案 `edge-tts` 與 AntiGravity 專屬行內播放技能模組（`07-voice`）。
+  - 建置並冒煙測試通過 Python 3.12 核心教學檔案處理工具包（Word, Excel, PPT, PDF, MarkItDown 等 10 大核心套件）。
   - 全面優化 GitHub 儲存庫外觀與開源基礎設施。
   - 新增 MIT 開源授權條款 (`LICENSE`)。
   - 新增 GitHub Issue 範本（需求建議與提問討論）。

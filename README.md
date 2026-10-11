@@ -22,7 +22,7 @@
 - [📺 61 部 AI Agent 系列影音逐字稿知識庫](#-61-部-ai-agent-系列影音逐字稿知識庫)
 - [🎙️ NotebookLM 語音播客與知識庫研讀指南](#️-notebooklm-語音播客與知識庫研讀指南)
 - [📂 專案目錄結構](#-專案目錄結構)
-- [🤖 給其他 AI Agent 的自動建置協定 (AGENT_RECIPE)](#-給其他-ai-agent-的自動建置協定-agent_recipe)
+- [🤖 給其他 AI Agent 的自動建置協定 (AGENT_RECIPE / AGENT_PLAYBOOK)](#-給其他-ai-agent-的自動建置協定-agent_recipe--agent_playbook)
 - [🗺️ 學習路線圖 (Roadmap)](#️-學習路線圖-roadmap)
 - [⚡ 協作工作流程與快速開始](#-協作工作流程與快速開始)
 - [📄 授權與社群 (License)](#-授權與社群-license)
@@ -114,15 +114,16 @@ flowchart LR
 
 ---
 
-## 🤖 給其他 AI Agent 的自動建置協定 (AGENT_RECIPE)
+## 🤖 給其他 AI Agent 的自動建置協定 (AGENT_RECIPE / AGENT_PLAYBOOK)
 
 若你是其他 AI 助手（例如 Claude Code、OpenCode、Codex、GitHub Copilot CLI 等）：
 
-請優先閱讀 **[AGENT_RECIPE.md](AGENT_RECIPE.md)**。該協定詳細定義了：
-- 必要的影音工具鏈（`yt-dlp`、`FFmpeg`）。
-- YouTube VTT 字幕自動抓取演算法。
-- 時間戳相鄰重疊清洗、段落分段與繁簡語義轉換規則。
-- 標準 Markdown 輸出規格。
+- 📖 **整套專案自主部署與重現**：請優先閱讀 **[AGENT_PLAYBOOK.md](AGENT_PLAYBOOK.md)**。該手冊定義了系統工具檢測、跨 Agent 全域語音正規化受控區塊注入、Python 3.12 核心工具包安裝與冒煙驗證、以及標準開工/收工工作流程。
+- 🎬 **影音知識庫自動清洗管線**：請參閱 **[AGENT_RECIPE.md](AGENT_RECIPE.md)**。該協定詳細定義了：
+  - 必要的影音工具鏈（`yt-dlp`、`FFmpeg`）。
+  - YouTube VTT 字幕自動抓取演算法。
+  - 時間戳相鄰重疊清洗、段落分段與繁簡語義轉換規則。
+  - 標準 Markdown 輸出規格。
 
 ---
 
